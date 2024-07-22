@@ -2,11 +2,11 @@ import React,{Fragment} from "react";
 import "./header.css";
 import HeaderCartButton from "./headerCartButton";
 
-const Header =()=>{
+const Header =(props)=>{
     return (<Fragment>
         <header className="header">
             <h1>ReactMeals</h1>
-            <HeaderCartButton></HeaderCartButton>
+            <HeaderCartButton onClick={props.onShowCart} ></HeaderCartButton>
         </header>
 
         <div>

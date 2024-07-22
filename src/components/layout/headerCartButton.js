@@ -1,8 +1,8 @@
 import React from "react";
 
-const CartButton =()=>{
+const HeaderCartButton =(props)=>{
     return (
-        <button>
+        <button className="button" onClick={props.onClick}>
             <span>
                 <img alt=""></img>
             </span>
@@ -12,4 +12,4 @@ const CartButton =()=>{
     )
 }
 
-export default CartButton;
+export default HeaderCartButton;
